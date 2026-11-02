@@ -1,5 +1,7 @@
 # Brinjel Docker
 
+**After doing some more testings locally with the self-hosted version, it's become clear self-hosting that tool is not what the developers had in mind, archiving this repo in case it becomes easier in the future**
+
 A valid dockerfile to build and run [brinjel](https://framagit.org/brinjel/brinjel) locally.
 
 The image is published and accessible at [azariasb/brinjel](https://hub.docker.com/r/azariasb/brinjel).
