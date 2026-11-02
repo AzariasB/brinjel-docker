@@ -1,0 +1,10 @@
+diff --git a/config/prod.exs b/config/prod.exs
+index 3d0b867e..88d4ca25 100644
+--- a/config/prod.exs
++++ b/config/prod.exs
+@@ -30,4 +30,4 @@ config :logger, level: :info
+ 
+ config :brinjel, :hardening,
+   fetch_cloud_ips: true,
+-  csp_secure_websocket: true
++  csp_secure_websocket: false

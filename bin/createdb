@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /app/bin/brinjel eval Brinjel.Release.createdb

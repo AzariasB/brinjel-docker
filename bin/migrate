@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -n "$1" ]; then
+    exec /app/bin/brinjel eval "Brinjel.Release.migrate(to: $1)"
+else
+    exec /app/bin/brinjel eval Brinjel.Release.migrate
+fi
