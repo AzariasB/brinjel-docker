@@ -20,7 +20,7 @@ jobs:
       - name: Normalize version
         id: version
         run: |
-          RAW=$(grep -oP '(?<=ENV BRINJEL_VERSION=).*' Dockerfile)
+          RAW=$(grep -oP '(?<=ARG BRINJEL_VERSION=).*' Dockerfile)
           echo "version=${RAW}" >> "$GITHUB_OUTPUT"
 
       - name: Set up QEMU

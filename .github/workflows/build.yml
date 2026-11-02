@@ -1,5 +1,5 @@
 ---
-name: Build and push bringel to docker hub
+name: Make sure the docker image can be built
 
 env:
   IMAGE_NAME: azariasb/brinjel
@@ -9,8 +9,8 @@ on:
     pull_request:
 
 jobs:
-  deploy:
-    name: Build and push docker image
+  build:
+    name: Build docker image
     if: "github.event_name == 'pull_request' || !contains(github.event.commits[0].message, '[skip ci]')"
     runs-on: ubuntu-latest
     environment: production
